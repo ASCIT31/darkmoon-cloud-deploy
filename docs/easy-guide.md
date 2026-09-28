@@ -1,95 +1,95 @@
-# Guide simple — installer DarkMoon dans le cloud
+# Easy guide — install DarkMoon in the cloud
 
-> **Guide facile à lire.** Phrases courtes, mots simples. Les mots difficiles sont expliqués. *(An easy-to-read guide, in French.)*
+> **Easy-read guide.** Short sentences, simple words. Hard words are explained.
 
-DarkMoon **n'est pas une boîte à acheter**. C'est un logiciel.
-Vous le mettez sur un ordinateur que vous louez dans le cloud.
-Et **une seule commande fait tout** : elle crée l'ordinateur, ouvre la porte, et installe DarkMoon.
-
----
-
-## Avant de commencer, il vous faut 3 choses
-
-1. Votre **clé de licence** DarkMoon. *(Vous la trouvez sur votre espace client.)*
-2. Votre **clé d'API pour l'IA**. *(C'est un code donné par le fournisseur d'IA.)*
-3. Un **compte cloud** : AWS, Google Cloud, Azure **ou** OVH.
-   *Le cloud = des ordinateurs que vous louez sur internet.*
+DarkMoon **is not a box you buy**. It is software.
+You put it on a computer that you rent in the cloud.
+And **one single command does everything**: it creates the computer, opens the door, and installs DarkMoon.
 
 ---
 
-## La méthode automatique (une seule commande)
+## Before you start, you need 3 things
 
-### Étape 1 — Ouvrez le CloudShell de votre cloud
-- Dans la console de votre cloud, cliquez sur le bouton **CloudShell**.
-  *CloudShell = une petite fenêtre noire, déjà connectée à votre compte. Rien à installer.*
-
-### Étape 2 — Collez une commande
-- Sur votre **espace client**, ouvrez la carte **« Deploy to cloud »**.
-- Prenez l'option **① Fully automated**. Cliquez **Copy**.
-- **Collez** la commande dans le CloudShell.
-- Remplacez `<YOUR_LLM_API_KEY>` par **votre clé d'IA**.
-- Pour un autre cloud : remplacez `aws` par `gcp`, `azure` ou `ovh`.
-- Appuyez sur **Entrée**.
-
-### Étape 3 — Attendez
-- L'ordinateur **se crée tout seul**.
-- La porte (le port 80) **s'ouvre toute seule**.
-- DarkMoon **s'installe tout seul**. Cela prend **environ 3 minutes**.
-- L'**adresse** du tableau de bord **s'affiche** à l'écran.
-
-### Étape 4 — Ouvrez DarkMoon
-- Copiez l'adresse affichée dans votre navigateur.
-- Le tableau de bord DarkMoon s'ouvre. **C'est prêt.** 🎉
+1. Your DarkMoon **license key**. *(You find it in your client portal.)*
+2. Your **AI API key**. *(This is a code given by your AI provider.)*
+3. A **cloud account**: AWS, Google Cloud, Azure **or** OVH.
+   *The cloud = computers that you rent over the internet.*
 
 ---
 
-## Ce qui se fait tout seul
+## The automatic way (one single command)
 
-- ✅ Créer l'ordinateur dans le cloud.
-- ✅ Ouvrir la porte (le port 80).
-- ✅ Installer Docker.
-- ✅ Installer DarkMoon.
+### Step 1 — Open your cloud's CloudShell
+- In your cloud's console, click the **CloudShell** button.
+  *CloudShell = a small black window, already signed in to your account. Nothing to install.*
 
-Vous **n'avez pas** à créer la machine à la main.
-Vous **n'avez pas** à ouvrir la porte à la main.
-Vous **n'avez pas** à vous connecter en SSH.
+### Step 2 — Paste one command
+- In your **client portal**, open the **"Deploy to cloud"** card.
+- Take the **① Fully automated** option. Click **Copy**.
+- **Paste** the command into CloudShell.
+- Replace `<YOUR_LLM_API_KEY>` with **your AI key**.
+- For another cloud: replace `aws` with `gcp`, `azure` or `ovh`.
+- Press **Enter**.
 
----
+### Step 3 — Wait
+- The computer **creates itself**.
+- The door (port 80) **opens by itself**.
+- DarkMoon **installs itself**. This takes **about 3 minutes**.
+- The dashboard **address appears** on screen.
 
-## La seule chose qu'on ne peut pas faire à votre place
-
-Vous devez être **connecté à VOTRE compte cloud**.
-Le CloudShell fait ça pour vous : vous êtes déjà connecté.
-
-On **ne prend jamais** vos identifiants de cloud.
-C'est **vous** qui lancez la commande, dans **votre** compte. C'est plus sûr.
-
----
-
-## Si quelque chose ne marche pas
-
-- Connectez-vous à votre machine.
-- Tapez : **`darkmoon doctor`**
-- Doctor vérifie tout et vous dit quoi faire.
+### Step 4 — Open DarkMoon
+- Copy the address shown into your browser.
+- The DarkMoon dashboard opens. **It is ready.** 🎉
 
 ---
 
-## Choisir la taille de la machine
+## What happens on its own
 
-La commande prend une taille par défaut (« standard »).
-Vous pouvez en choisir une autre avec `--profile` :
+- ✅ Create the computer in the cloud.
+- ✅ Open the door (port 80).
+- ✅ Install Docker.
+- ✅ Install DarkMoon.
 
-| Besoin | Écrivez | Cœurs / Mémoire |
+You **do not** have to create the machine by hand.
+You **do not** have to open the door by hand.
+You **do not** have to connect over SSH.
+
+---
+
+## The only thing we cannot do for you
+
+You must be **signed in to YOUR cloud account**.
+CloudShell does this for you: you are already signed in.
+
+We **never take** your cloud credentials.
+**You** run the command, in **your** account. That is safer.
+
+---
+
+## If something does not work
+
+- Connect to your machine.
+- Type: **`darkmoon doctor`**
+- Doctor checks everything and tells you what to do.
+
+---
+
+## Choosing the machine size
+
+The command uses a default size ("standard").
+You can pick another one with `--profile`:
+
+| Need | Write | Cores / Memory |
 |---|---|---|
-| Petit (essai) | `--profile minimum` | 2 / 8 Go |
-| Normal | `--profile standard` | 4 / 16 Go |
-| Puissant | `--profile performance` | 8 / 32 Go |
-| Industriel | `--profile industrial` | 16 / 64 Go |
+| Small (trial) | `--profile minimum` | 2 / 8 GB |
+| Normal | `--profile standard` | 4 / 16 GB |
+| Powerful | `--profile performance` | 8 / 32 GB |
+| Industrial | `--profile industrial` | 16 / 64 GB |
 
 ---
 
-## Pour aller plus loin (personnes techniques)
+## Going further (for technical people)
 
-- La commande complète et les 3 méthodes : voir [one-command.md](one-command.md).
-- Par cloud : [AWS](aws.md) · [GCP](gcp.md) · [Azure](azure.md) · [OVH](ovh.md).
-- Sécurité (mettre les clés dans un coffre-fort) : [security.md](security.md).
+- The full command and the 3 methods: see [one-command.md](one-command.md).
+- Per cloud: [AWS](aws.md) · [GCP](gcp.md) · [Azure](azure.md) · [OVH](ovh.md).
+- Security (put the keys in a vault): [security.md](security.md).

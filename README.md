@@ -1,6 +1,6 @@
 # DarkMoon in the cloud
 
-> 🟢 **Pas technique ?** Suivez le [**guide simple (facile à lire)**](docs/easy-guide.md) — installez DarkMoon dans le cloud en une seule commande.
+> 🟢 **Not technical?** Follow the [**easy guide (easy-read)**](docs/easy-guide.md) — install DarkMoon in the cloud with one command.
 
 
 **Your cloud, your infrastructure, DarkMoon — one command, no box, no marketplace.**
