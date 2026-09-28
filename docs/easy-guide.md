@@ -1,7 +1,6 @@
-# Guide FALC — installer DarkMoon dans le cloud
+# Guide simple — installer DarkMoon dans le cloud
 
-> **FALC = Facile À Lire et à Comprendre.** Ce guide utilise des phrases courtes et
-> des mots simples. Les mots difficiles sont expliqués. *(An easy-to-read guide, in French.)*
+> **Guide facile à lire.** Phrases courtes, mots simples. Les mots difficiles sont expliqués. *(An easy-to-read guide, in French.)*
 
 DarkMoon **n'est pas une boîte à acheter**. C'est un logiciel.
 Vous le mettez sur un ordinateur que vous louez dans le cloud.

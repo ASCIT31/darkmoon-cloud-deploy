@@ -1,6 +1,6 @@
 # DarkMoon in the cloud
 
-> 🟢 **Pas technique ?** Suivez le [**guide FALC (facile à lire)**](docs/falc.md) — installez DarkMoon dans le cloud en une seule commande.
+> 🟢 **Pas technique ?** Suivez le [**guide simple (facile à lire)**](docs/easy-guide.md) — installez DarkMoon dans le cloud en une seule commande.
 
 
 **Your cloud, your infrastructure, DarkMoon — one command, no box, no marketplace.**
