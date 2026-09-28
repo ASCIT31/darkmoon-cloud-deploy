@@ -1,5 +1,8 @@
 # DarkMoon in the cloud
 
+> 🟢 **Pas technique ?** Suivez le [**guide FALC (facile à lire)**](docs/falc.md) — installez DarkMoon dans le cloud en une seule commande.
+
+
 **Your cloud, your infrastructure, DarkMoon — one command, no box, no marketplace.**
 
 Customers keep asking the same question: *"Do you sell a hardware box?"*
