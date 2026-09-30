@@ -67,6 +67,7 @@ Start with the overview, then pick your cloud.
   - [GCP](docs/gcp.md)
   - [Azure](docs/azure.md)
   - [OVH](docs/ovh.md)
+- [Portainer](docs/portainer.md) — deploy the open source CLI as a Portainer App/Custom Template
 - [Sizing](docs/sizing.md) — profiles mapped to instance types
 - [Network](docs/network.md) — the flows to open in the security group / firewall
 - [AI modes](docs/ai-modes.md) — Connected, Private, Local
