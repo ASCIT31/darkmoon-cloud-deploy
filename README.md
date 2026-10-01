@@ -96,3 +96,18 @@ runtime.
 ---
 
 <sub>DarkMoon Pro is developed by ASC-IT. This repository documents deployment only.</sub>
+
+## 🎥 Video tutorial
+
+[![Watch the Darkmoon + Cloud deployment tutorial on YouTube](https://img.youtube.com/vi/2B_q_4IkE1A/maxresdefault.jpg)](https://youtu.be/2B_q_4IkE1A)
+
+▶ **[Watch the full Darkmoon + Cloud deployment tutorial on YouTube](https://youtu.be/2B_q_4IkE1A)** — real setup, end to end.
+
+## Darkmoon ecosystem
+
+Darkmoon is an open-source, AI-powered penetration testing platform. It runs a full autonomous assessment and this integration brings the results into your Cloud deployment workflow.
+
+- ⭐ **Flagship (star it):** https://github.com/ASCIT31/Dark-Moon
+- 📚 **Docs:** https://docs.dark-moon.org
+- 🌐 **Website:** https://dark-moon.org
+- 🔗 **Related integrations:** [GitHub Actions](https://github.com/ASCIT31/darkmoon-action) 
