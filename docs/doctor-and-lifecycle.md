@@ -83,6 +83,12 @@ interacts with cloud automation:
   activation, and floating leases are not shown in the dashboard's node-locked device
   list; they release themselves automatically within about an hour, or you release one
   immediately by its machine code in the portal.
+- **Release the slot on teardown (recommended).** Before you destroy a node, run
+  **`darkmoon deactivate`** on it: it frees this node's device slot immediately (it reads
+  the node's machine code and calls the portal; a network/portal error never blocks the
+  teardown). With Terraform (AWS), set `release_slot_on_destroy = true` (plus
+  `enable_ssh = true` and `ssh_private_key_path`) to run it automatically on
+  `terraform destroy`. If you skip this, the slot still frees itself within ~1h.
 - **Floating / offline behavior, at a high level.** The license supports floating
   activation (slots can be reclaimed and re-issued rather than being permanently pinned to
   a dead VM) and an **offline validation cache** so a node keeps working through brief
