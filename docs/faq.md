@@ -56,6 +56,15 @@ consumes one — plan for that if you spin up many ephemeral nodes. See
 [Doctor & lifecycle](doctor-and-lifecycle.md#license--slots). *This documentation
 repository* is free (CC BY 4.0); the engine is not.
 
+## Activation says "device limit reached" — what do I do?
+
+The key is valid; all its device slots are in use (a previous activation, or a floating
+lease, still holds the slot). Free one yourself: in the
+[client portal](https://portal.dark-moon.org) open **Devices & activation slots** and
+release the machine code shown in your activation error (`darkmoon doctor` prints it too),
+then re-run activation. Floating slots also release themselves within about an hour. See
+[Troubleshooting](troubleshooting.md).
+
 ## Can I run it fully air-gapped?
 
 Not as a validated configuration today. Local mode removes *LLM* egress, but install and

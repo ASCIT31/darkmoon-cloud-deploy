@@ -74,9 +74,15 @@ interacts with cloud automation:
   destroys nodes frequently (autoscaling experiments, short-lived CI runners, blue/green
   churn), you can burn through the slot count. Prefer long-lived nodes, or release slots
   when you tear a node down.
-- **Slots are managed in the license dashboard.** You can see and free device slots there
-  (the license portal). If activation fails with a slot/machine error, check the
-  dashboard first.
+- **Free a slot yourself from the client portal.** If activation fails with
+  `device limit reached`, open the [client portal](https://portal.dark-moon.org) →
+  **Devices & activation slots**, and release the machine code shown in your activation
+  error (`darkmoon doctor` prints this node's machine code too). Then re-run activation.
+  No need to email support.
+- **Floating activations are not listed as devices.** The guard uses *floating*
+  activation, and floating leases are not shown in the dashboard's node-locked device
+  list; they release themselves automatically within about an hour, or you release one
+  immediately by its machine code in the portal.
 - **Floating / offline behavior, at a high level.** The license supports floating
   activation (slots can be reclaimed and re-issued rather than being permanently pinned to
   a dead VM) and an **offline validation cache** so a node keeps working through brief
